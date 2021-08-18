@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-
+import { getRandomThrow } from './get-random-throw.js';
 // initialize global state
 
 // set event listeners 

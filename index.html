@@ -32,14 +32,18 @@
         <label>
             <input type="radio" name="throw" value="scissors" /><img src="./assets/scissor.jpg" />
         </label>
-        <button>play</button>
-        <div>wins</div>
-        <div>loses</div>
-        <div>draws</div>
-        <button>reset</button>
-        <div>how many resets</div>
+        <button id="play-btn">play</button>
+        <div id="computer-throw">computer threw</div>
+        <result id="who-won">result</result>
+        <ul>
+            <li id="number-wins">wins</li>
+            <li id="number-losses">losses</li>
+            <li id="number-draws">draws</li>
+        </ul>
     </main>
     <footer>
+        <button id="reset-btn">reset</button>
+        <div id="num-of-resets">how many resets</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
