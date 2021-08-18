@@ -1,4 +1,4 @@
-// import functions and grab DOM elements
+import { didUserWin } from './did-user-win.js';
 import { getRandomThrow } from './get-random-throw.js';
 
 const playBtn = document.querySelector('#play-btn');
@@ -10,23 +10,30 @@ const numDraws = document.querySelector('#number-draws');
 const resetBtn = document.querySelector('#reset-btn');
 const numResets = document.querySelector('#num-of-resets');
 
-// initialize global state
 let wins = 0;
 let loses = 0;
 let draws = 0;
 
-  // playBtn.addEventListener('click', () => {
-  
-  // }
+let computer = getRandomThrow();
 
-// function didUserWin(player, computer) {
-//   }
-
-// console logging to check stuff is there
-// console.log(playBtn, compThrow, whoWon, numWins, numLosses, numDraws, resetBtn, numResets);
-console.log(getRandomThrow());
-console.log(wins, loses, draws);
-
-numWins.textContent = `number of wins: ${wins}`;
-numLosses.textContent = `number of wins: ${loses}`;
-numDraws.textContent = `number of wins: ${draws}`;
+playBtn.addEventListener('click', () => {
+    const player = document.querySelector('input:checked');
+    const outcome = didUserWin(player.value, computer);
+    if (outcome === 'win') {
+        wins++;
+        whoWon.textContent = 'you win!';
+    }
+    if (outcome === 'loss') {
+        loses++;
+        whoWon.textContent = 'computer won...';
+    }
+    if (outcome === 'draw') {
+        draws++;
+        whoWon.textContent = 'A draw, try again';
+    }
+    numWins.textContent = `number of wins: ${wins}`;
+    numLosses.textContent = `number of losses: ${loses}`;
+    numDraws.textContent = `number of draws: ${draws}`;
+    compThrow.textContent = `computer picked: ${computer}`;
+    computer = getRandomThrow();
+});
