@@ -22,4 +22,4 @@
 <!-- Radio buttons with same name for grouping for choosing rock, paper, or scissors (images anyone?) -->
 <!-- Button for "Play" -->
 <!-- Display of wins and losses and draws -->
-Display of result of each game (can be text and/or images), should indicate what the computer threw and what the result was (win, loss, draw)
+<!-- Display of result of each game (can be text and/or images), should indicate what the computer threw and what the result was (win, loss, draw) -->
