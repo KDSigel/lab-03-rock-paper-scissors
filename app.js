@@ -26,3 +26,7 @@ let draws = 0;
 // console.log(playBtn, compThrow, whoWon, numWins, numLosses, numDraws, resetBtn, numResets);
 console.log(getRandomThrow());
 console.log(wins, loses, draws);
+
+numWins.textContent = `number of wins: ${wins}`;
+numLosses.textContent = `number of wins: ${loses}`;
+numDraws.textContent = `number of wins: ${draws}`;
