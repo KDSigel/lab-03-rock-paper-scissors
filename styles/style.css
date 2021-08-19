@@ -10,6 +10,7 @@ header {
 }
 ol {
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 22px;
 }
 main {
     display: flex;
@@ -28,31 +29,38 @@ input + img {
     border: solid 5px transparent;
 }
 input:checked + img {
-    border: solid 5px rgb(0, 0, 0);
+    border: solid 5px rgb(255, 174, 0);
 }
 .throws {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 22px;
+    margin: 5px;
 }
 label {
-    padding: 11px;
+    margin: 11px;
 }
 button {
-    width: 100px;
-    height: 100px;
-    margin: 11px;
+    width: 109px;
+    height: 109px;
     font-size: 1.4rem;
     color: white;
-    background-color: rgb(255, 140, 0);
-    border-radius: 6px;
+    background-color: rgb(0, 69, 101);
+    border-radius: 11px;
     border: 4px;
     border-style: solid;
-    border-color: rgb(184, 101, 0);
+    margin: 11px;
 }
 .results {
-    color: rgb(255, 140, 0);
+    color: rgb(0, 69, 101);
     margin-top: 22px;
+}
+button:hover {
+    cursor: pointer;
+    border-color: rgb(255, 174, 0);
+}
+.select-it {
+    color: rgb(0, 69, 101);
+    font-size: 1.6rem;
 }

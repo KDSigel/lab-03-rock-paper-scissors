@@ -11,19 +11,18 @@
     <link rel="stylesheet" href="./styles/home.css">
     <title>Rochambeau</title>
 </head>
-
 <body>
     <header>
         Can you beat the computer?
     </header>
     <main>
-        <h2>Rules</h2>
         <ol>
+            <li>Rules:</li>
             <li>Paper beats rock,</li>
             <li>Rock beats scissors,</li>
             <li>Scissors beats papers.</li>
-            <li>'nuff said!</li>
         </ol>
+        <div class="select-it">Select one below. Then click throw.</div>
         <section class="throws">
             <label>
                 <input type="radio" name="throw" value="rock" /><img src="./assets/rock.jpg" />
@@ -34,8 +33,8 @@
             <label>
                 <input type="radio" name="throw" value="scissors" /><img src="./assets/scissor.jpg" />
             </label>
+            <button id="play-btn">throw!</button>
         </section>
-        <button id="play-btn">choice</button>
         <div id="computer-throw"></div>
         <result id="who-won"></result>
         <ul class="results">
