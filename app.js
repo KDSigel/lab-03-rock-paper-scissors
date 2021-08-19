@@ -7,8 +7,8 @@ const whoWon = document.querySelector('#who-won');
 const numWins = document.querySelector('#number-wins');
 const numLosses = document.querySelector('#number-losses');
 const numDraws = document.querySelector('#number-draws');
-const resetBtn = document.querySelector('#reset-btn');
-const numResets = document.querySelector('#num-of-resets');
+// const resetBtn = document.querySelector('#reset-btn');
+// const numResets = document.querySelector('#num-of-resets');
 
 let wins = 0;
 let loses = 0;

@@ -17,21 +17,24 @@
         Can you beat the computer?
     </header>
     <main>
+        <h2>Rules</h2>
         <ol>
-            <li>paper beats rock</li>
-            <li>rock beats scissors</li>
-            <li>scissors beats papers</li>
-            <li>'nuff said</li>
+            <li>Paper beats rock,</li>
+            <li>Rock beats scissors,</li>
+            <li>Scissors beats papers.</li>
+            <li>'nuff said!</li>
         </ol>
-        <label>
-            <input type="radio" name="throw" value="rock" /><img src="./assets/rock.jpg" />
-        </label>
-        <label>
-            <input type="radio" name="throw" value="paper" /><img src="./assets/paper.jpg" />
-        </label>
-        <label>
-            <input type="radio" name="throw" value="scissors" /><img src="./assets/scissor.jpg" />
-        </label>
+        <section class="throws">
+            <label>
+                <input type="radio" name="throw" value="rock" /><img src="./assets/rock.jpg" />
+            </label>
+            <label>
+                <input type="radio" name="throw" value="paper" /><img src="./assets/paper.jpg" />
+            </label>
+            <label>
+                <input type="radio" name="throw" value="scissors" /><img src="./assets/scissor.jpg" />
+            </label>
+        </section>
         <button id="play-btn">play</button>
         <div id="computer-throw"></div>
         <result id="who-won"></result>
