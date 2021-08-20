@@ -7,6 +7,7 @@ header {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
+    color: orange;
 }
 ol {
     font-family: Arial, Helvetica, sans-serif;
@@ -46,21 +47,24 @@ button {
     height: 109px;
     font-size: 1.4rem;
     color: white;
-    background-color: rgb(0, 69, 101);
+    background-color: rgb(0, 0, 0);
     border-radius: 11px;
     border: 4px;
     border-style: solid;
     margin: 11px;
 }
 .results {
-    color: rgb(0, 69, 101);
     margin-top: 22px;
 }
 button:hover {
     cursor: pointer;
-    border-color: rgb(255, 174, 0);
+    border-color: orange;
+    color: orange;
 }
 .select-it {
     color: rgb(0, 69, 101);
     font-size: 1.6rem;
+}
+.rules {
+    color: green;
 }
