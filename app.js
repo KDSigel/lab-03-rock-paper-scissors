@@ -7,14 +7,16 @@ const whoWon = document.querySelector('#who-won');
 const numWins = document.querySelector('#number-wins');
 const numLosses = document.querySelector('#number-losses');
 const numDraws = document.querySelector('#number-draws');
-// const resetBtn = document.querySelector('#reset-btn');
-// const numResets = document.querySelector('#num-of-resets');
+const resetBtn = document.querySelector('#reset-btn');
+const numResets = document.querySelector('#num-of-resets');
 
 let wins = 0;
 let loses = 0;
 let draws = 0;
+let numOfResets = 0;
 
 let computer = getRandomThrow();
+
 
 playBtn.addEventListener('click', () => {
     const player = document.querySelector('input:checked');
@@ -36,4 +38,12 @@ playBtn.addEventListener('click', () => {
     numDraws.textContent = `number of draws: ${draws}`;
     compThrow.textContent = `computer picked: ${computer}`;
     computer = getRandomThrow();
+});
+
+resetBtn.addEventListener('click', () => {
+    wins = 0;
+    loses = 0;
+    draws = 0;
+    numOfResets++;
+    numResets.textContent = `Number of resets ${numOfResets}`;
 });

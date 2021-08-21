@@ -1,5 +1,10 @@
 * { box-sizing: border-box;
 }
+
+body{
+    background-color: black;
+    color: white;
+}
 header {
     display: flex;
     height: 100px;
@@ -7,7 +12,6 @@ header {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color: orange;
 }
 ol {
     font-family: Arial, Helvetica, sans-serif;
@@ -42,7 +46,7 @@ input:checked + img {
 label {
     margin: 11px;
 }
-button {
+#play-btn {
     width: 109px;
     height: 109px;
     font-size: 1.4rem;
@@ -62,9 +66,14 @@ button:hover {
     color: orange;
 }
 .select-it {
-    color: rgb(0, 69, 101);
     font-size: 1.6rem;
 }
 .rules {
-    color: green;
+
+}
+footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
